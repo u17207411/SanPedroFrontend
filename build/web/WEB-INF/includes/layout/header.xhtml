@@ -1,0 +1,17 @@
+<ui:composition
+    xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:h="http://xmlns.jcp.org/jsf/html"
+    xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+    xmlns:b="http://bootsfaces.net/ui">
+    <b:navBar brand-img="img/logo.png" brandImgStyle="padding-bottom:5px; width: 25px; height: 30px" 
+              brand="SAN PEDRO" brandHref="#{request.contextPath}/" inverse="true"
+              fixed="top">      
+        <b:navbarLinks>
+            <b:navLink value="#{texto['start']}" href="index.xhtml#seccion1"></b:navLink>
+            <b:navLink value="#{texto['services']}" href="index.xhtml#seccion2"></b:navLink>
+            <b:navLink value="#{texto['products']}" href="index.xhtml#seccion3"></b:navLink>
+            <b:navLink value="#{texto['location']}" href="index.xhtml#seccion4"></b:navLink>
+            <b:navLink value="#{texto['contac']}" href="contac.xhtml"></b:navLink>
+        </b:navbarLinks>
+    </b:navBar>  
+</ui:composition>

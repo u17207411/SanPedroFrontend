@@ -1,0 +1,36 @@
+<ui:composition
+    xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:h="http://xmlns.jcp.org/jsf/html"
+    xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+    <hr/>
+    
+    <nav class="row" style="text-align: center;">
+
+        <div class="col-m-6" style="background-color: ghostwhite;">
+            <br/>
+            <h3 style="text-align: center">#{texto['vet']}</h3><br/>
+            <ul class="list-unstyled">
+                <li>#{texto['di']}</li><br/>
+                <li>#{texto['num']}</li><br/>
+                <li>#{texto['ema']}</li><br/>
+            </ul>
+        </div>
+        <div class="col-m-6" style="background-color: ghostwhite;">
+            <br/>
+            <h3 style="text-align: center">#{texto['abo']}</h3><br/>
+            <ul class="list-unstyled">
+                <li> <a href="">#{texto['term']}</a></li>
+                <li><a href="">#{texto['pol']}</a></li>
+                <li><a href="">#{texto['polc']}</a></li>
+                <li><a href="">#{texto['preg']}</a></li>
+                <li><a href="">#{texto['dec']}</a></li>
+                <li><a href="">#{texto['prov']}</a></li>
+
+            </ul>
+        </div>
+    </nav>
+    <div class="text-center" style="background-color: black; color: white;">
+        &#169; #{texto['all']} <br/>
+        <small>#{texto['vet']}</small>
+    </div>
+</ui:composition>

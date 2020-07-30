@@ -1,0 +1,425 @@
+<ui:composition template="/WEB-INF/template/layout.xhtml"
+                xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://xmlns.jcp.org/jsf/html"
+                xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+                xmlns:b="http://bootsfaces.net/ui">
+    <ui:param name="title" value="Inicio" />
+    <ui:define name="content">
+        <h:head>           
+            <link href="css/estructura.css" rel="stylesheet"/>   
+            <link href="css/estilos.css" rel="stylesheet"/>
+        </h:head>
+        <h:body style="padding-top: 50px;">            
+            <b:carousel id="tiovivo" interval="2500" >
+                <b:carouselItem caption="En Clínicas San Pedro sabemos lo que es mejor para tu mascota">
+                    <img src="img/cachorro1.jpg" alt="Imagen de cachorro rotswailler" />
+                </b:carouselItem>
+                <b:carouselItem caption="Gran capital humano para la mejor atención">
+                    <img src="img/gato1.jpg" alt="Imagen de gato siendo atentido" />
+                </b:carouselItem>
+                <b:carouselItem caption="Diversos servicios para engreir a tu mascota">
+                    <img src="img/baño1.jpg" alt="Perro en Bañera" />
+                </b:carouselItem>
+                <b:carouselItem caption="Variedad en productos con estándares de alta calidad">
+                    <img src="img/producto1.jpg" alt="Caja de gato" />                   
+                </b:carouselItem>              
+            </b:carousel>             
+            <div id="seccion1" class="col-12 col-m-12 col-s-12" style="padding: 30px;font-size: 18px; ">     <br/>         
+                <h1 style='text-align: left'>#{texto['start']}</h1>  
+                <img src="img/veterinario1.jpg" class="rounded float-right" alt="veterinario"/><br/>  <br/>  
+                <p>#{texto['are']}</p>     
+
+            </div>
+
+            <div id="seccion2" class="col-12 col-m-12 col-s-12"  style="background-color:dodgerblue;color: black; padding: 30px"><br/> 
+                <h1>#{texto['services']}</h1><br/><br/>
+                
+                <div class="row row-cols-1 row-cols-md-3" style='text-align: center'>
+                    <div class="col mb-4">
+                        <!-- Card -->
+                        <div class="card">
+
+                            <!--Card image-->
+                            <div class="view overlay">
+                                <img class="card-img-top" src="img/consulta.jpg"
+                                     alt="Card image cap"/>
+
+                            </div>
+
+                            <!--Card content-->
+
+                            <div class="card-body">
+                                <br/>
+                                <h5 class="card-title" style="text-align: center">#{texto['cons']}</h5>
+                                <p class="card-text">#{texto['clin']}</p>
+                            </div>
+
+                        </div>
+                        <!-- Card -->
+                    </div>
+                    <div class="col mb-4">
+                        <!-- Card -->
+                        <div class="card">
+
+                            <!--Card image-->
+                            <div class="view overlay">
+                                <img class="card-img-top" src="img/corte.jpg"
+                                     alt="Card image cap"/>
+                                <a href="#!">
+                                    <div class="mask rgba-white-slight"></div>
+                                </a>
+                            </div>
+
+                            <!--Card content-->
+                            <div class="card-body">
+                                <br/>
+                                <h5 class="card-title">#{texto['haircut']}</h5>
+                                <p class="card-text">#{texto['cort']}</p>
+                            </div>
+
+                        </div>
+                        <!-- Card -->
+                    </div>
+                    <div class="col mb-4">
+                        <!-- Card -->
+                        <div class="card">
+
+                            <!--Card image-->
+                            <div class="view overlay">
+                                <img class="card-img-top" src="img/baño.jpg" 
+                                     alt="Card image cap"/>
+                                <a href="#!">
+                                    <div class="mask rgba-white-slight"></div>
+                                </a>
+                            </div>
+
+                            <!--Card content-->
+                            <div class="card-body">
+                                <br/>
+                                <h5 class="card-title">#{texto['bath']}</h5>
+                                <p class="card-text">#{texto['ba']}</p>
+                            </div>
+
+                        </div>
+                        <!-- Card -->
+                    </div>
+                    <div class="col mb-4">
+                        <!-- Card -->
+                        <div class="card">
+
+                            <!--Card image-->
+                            <div class="view overlay">
+                                <img class="card-img-top" src="img/cepillado.jpg"
+                                     alt="Card image cap"/>
+                                <a href="#!">
+                                    <div class="mask rgba-white-slight"></div>
+                                </a>
+                            </div>
+
+                            <!--Card content-->
+                            <div class="card-body">
+                                <h5 class="card-title">#{texto['brush']}</h5>
+                                <p class="card-text">#{texto['bru']}</p>
+                            </div>
+
+                        </div>
+                        <!-- Card -->
+                    </div>
+                    <div class="col mb-4">
+                        <!-- Card -->
+                        <div class="card">
+
+                            <!--Card image-->
+                            <div class="view overlay">
+                                <img class="card-img-top" src="img/control.jpg"
+                                     alt="Card image cap"/>
+                                <a href="#!">
+                                    <div class="mask rgba-white-slight"></div>
+                                </a>
+                            </div>
+
+                            <!--Card content-->
+                            <div class="card-body">
+
+                                <h5 class="card-title">#{texto['vacc']}</h5><br/>
+                                <p class="card-text">#{texto['va']}</p>
+                            </div>
+
+                        </div>
+                        <!-- Card -->
+                    </div>
+                    <div class="col mb-4">
+                        <!-- Card -->
+                        <div class="card">
+
+                            <!--Card image-->
+                            <div class="view overlay">
+                                <img class="card-img-top" src="img/tratamiento.jpg"
+                                     alt="Card image cap"/>
+                                <a href="#!">
+                                    <div class="mask rgba-white-slight"></div>
+                                </a>
+                            </div>
+
+                            <!--Card content-->
+                            <div class="card-body">
+                                <h5 class="card-title">#{texto['treat']}</h5>
+                                <p class="card-text">#{texto['tra']}</p>
+                            </div>
+
+                        </div>
+                        <!-- Card -->
+                    </div>
+                    <div class="col mb-4">
+                        <!-- Card -->
+                        <div class="card">
+
+                            <!--Card image-->
+                            <div class="view overlay">
+                                <img class="card-img-top" src="img/curacion.jpg"
+                                     alt="Card image cap"/>
+                                <a href="#!">
+                                    <div class="mask rgba-white-slight"></div>
+                                </a>
+                            </div>
+
+                            <!--Card content-->
+                            <div class="card-body">
+                                <h5 class="card-title">#{texto['heal']}</h5>
+                                <p class="card-text" >#{texto['he']}</p>
+                            </div>
+
+                        </div>
+                        <!-- Card -->
+                    </div>
+
+                    <div class="col mb-4">
+                        <!-- Card -->
+                        <div class="card">
+
+                            <!--Card image-->
+                            <div class="view overlay">
+                                <img class="card-img-top" src="img/eutanasia.jpg"
+                                     alt="Card image cap"/>
+                                <a href="#!">
+                                    <div class="mask rgba-white-slight"></div>
+                                </a>
+                            </div>
+
+                            <!--Card content-->
+                            <div class="card-body">
+                                <h5 class="card-title">#{texto['euta']}</h5>
+                                <p class="card-text" >#{texto['eu']}</p>
+                            </div>
+
+                        </div>
+                        <!-- Card -->
+                    </div>
+
+                    <div class="col mb-4">
+                        <!-- Card -->
+                        <div class="card">
+
+                            <!--Card image-->
+                            <div class="view overlay">
+                                <img class="card-img-top" src="img/esterilizacion.jpg"
+                                     alt="Card image cap"/>
+                                <a href="#!">
+                                    <div class="mask rgba-white-slight"></div>
+                                </a>
+                            </div>
+
+                            <!--Card content-->
+                            <div class="card-body">
+                                <h5 class="card-title">#{texto['ster']}</h5>
+                                <p class="card-text" >#{texto['ester']}</p>
+                            </div>
+
+                        </div>
+                        <!-- Card -->
+                    </div>
+                </div>
+            </div>
+            <div id="seccion3" class="col-12 col-m-12 col-s-12" style="padding: 30px"><br/> 
+                <h1>#{texto['products']}</h1><br/><br/>
+                <h3>#{texto['cats']}</h3><br/>
+                <!-- Card deck -->
+                <div class="card-deck" style="text-align: center">
+
+                    <!-- Card -->
+                    <div class="card mb-4">
+
+                        <!--Card image-->
+                        <div class="view overlay">
+                            <img class="card-img-top" src="img/juguetes.jpg"
+                                 alt="Card image cap"/>
+                            <a href="#!">
+                                <div class="mask rgba-white-slight"></div>
+                            </a>
+                        </div>
+
+                        <!--Card content-->
+                        <div class="card-body">
+
+                            <!--Title-->
+                            <h4 class="card-title">#{texto['toys']}</h4>
+                            <!--Text-->
+                            <p class="card-text">#{texto['jug']}</p>
+                            <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+
+                        </div>
+
+                    </div>
+                    <!-- Card -->
+
+                    <!-- Card -->
+                    <div class="card mb-4">
+
+                        <!--Card image-->
+                        <div class="view overlay">
+                            <img class="card-img-top" src="img/ropa1.jpg"
+                                 alt="Card image cap"/>
+                            <a href="#!">
+                                <div class="mask rgba-white-slight"></div>
+                            </a>
+                        </div>
+
+                        <!--Card content-->
+                        <div class="card-body">
+
+                            <!--Title-->
+                            <h4 class="card-title">#{texto['clothes']}</h4>
+                            <!--Text-->
+                            <p class="card-text">#{texto['clo']}</p>
+                            <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+                         
+
+                        </div>
+
+                    </div>
+                    <!-- Card -->
+
+                    <!-- Card -->
+                    <div class="card mb-4">
+
+                        <!--Card image-->
+                        <div class="view overlay">
+                            <img class="card-img-top" src="img/medicinas1.jpg"
+                                 alt="Card image cap"/>
+                            <a href="#!">
+                                <div class="mask rgba-white-slight"></div>
+                            </a>
+                        </div>
+
+                        <!--Card content-->
+                        <div class="card-body">
+
+                            <!--Title-->
+                            <h4 class="card-title">#{texto['medicines']}</h4>
+                            <!--Text-->
+                            <p class="card-text">#{texto['med']}</p>
+                            <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+
+                        </div>
+
+                    </div>
+                    <!-- Card -->
+
+                </div>
+                <!-- Card deck -->
+                <br/><br/>
+                <h3>#{texto['dogs']}</h3><br/>
+                <!-- Card deck -->
+                <div class="card-deck" style="text-align: center">
+
+                    <!-- Card -->
+                    <div class="card mb-4">
+
+                        <!--Card image-->
+                        <div class="view overlay">
+                            <img class="card-img-top" src="img/juguetes2.jpg"
+                                 alt="Card image cap"/>
+                            <a href="#!">
+                                <div class="mask rgba-white-slight"></div>
+                            </a>
+                        </div>
+
+                        <!--Card content-->
+                        <div class="card-body">
+
+                            <!--Title-->
+                            <h4 class="card-title">#{texto['toys']}</h4>
+                            <!--Text-->
+                            <p class="card-text">#{texto['to']}</p>
+                            <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+
+                        </div>
+
+                    </div>
+                    <!-- Card -->
+
+                    <!-- Card -->
+                    <div class="card mb-4">
+
+                        <!--Card image-->
+                        <div class="view overlay">
+                            <img class="card-img-top" src="img/ropa2.jpg"
+                                 alt="Card image cap"/>
+                            <a href="#!">
+                                <div class="mask rgba-white-slight"></div>
+                            </a>
+                        </div>
+
+                        <!--Card content-->
+                        <div class="card-body">
+
+                            <!--Title-->
+                            <h4 class="card-title">#{texto['clothes']}</h4>
+                            <!--Text-->
+                            <p class="card-text">#{texto['rop']}</p>
+                            <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+
+                        </div>
+
+                    </div>
+                    <!-- Card -->
+
+                    <!-- Card -->
+                    <div class="card mb-4">
+
+                        <!--Card image-->
+                        <div class="view overlay">
+                            <img class="card-img-top" src="img/medicinas2.jpg"
+                                 alt="Card image cap"/>
+                            <a href="#!">
+                                <div class="mask rgba-white-slight"></div>
+                            </a>
+                        </div>
+
+                        <!--Card content-->
+                        <div class="card-body">
+
+                            <!--Title-->
+                            <h4 class="card-title">#{texto['medicines']}</h4>
+                            <!--Text-->
+                            <p class="card-text">#{texto['medic']}</p>
+                            <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+
+                        </div>
+
+                    </div>
+                    <!-- Card -->
+
+                </div>
+                <!-- Card deck -->
+
+            </div>
+            <div id="seccion4" class="col-12 col-m-12 col-s-12" style="background-color:gainsboro;padding: 30px"><br/> 
+                <h1>#{texto['location']}</h1><br/><br/>
+                <iframe class="col-12 col-m-12 col-s-12" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3899.7530116248777!2d-76.98364648523751!3d-12.19720199136727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105b91549a4b1a9%3A0xb25cde39e36904e0!2sVeterinaria%20San%20Pedro!5e0!3m2!1ses-419!2spe!4v1595958907316!5m2!1ses-419!2spe" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div> 
+        </h:body>
+
+    </ui:define>
+</ui:composition>
+

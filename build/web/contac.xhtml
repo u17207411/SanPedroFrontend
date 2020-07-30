@@ -1,0 +1,42 @@
+<ui:composition template="/WEB-INF/template/layout.xhtml"
+                xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://xmlns.jcp.org/jsf/html"
+                xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+    <ui:param name="title" value="contact" />
+    <ui:define name="content">
+        <h:head>           
+            <link href="css/estructura.css" rel="stylesheet"/>   
+            <link href="css/estilos.css" rel="stylesheet"/>
+        </h:head>
+        <!-- Default form contact -->
+<form class="text-center border border-light p-5" action="#!">
+<br/><br/>
+    <p class="h4 mb-4">#{texto['contac']}</p>
+
+    <!-- Nombre -->
+    <input type="text" id="defaultContactFormName" class="form-control mb-4" placeholder="Nombres y Apellidos"/>
+
+    <!-- Email -->
+    <input type="email" id="defaultContactFormEmail" class="form-control mb-4" placeholder="E-mail"/>
+
+    <select class="browser-default custom-select mb-4">
+        <option value="0">#{texto['choose']}</option>
+        <option value="1">#{texto['com']}</option>
+        <option value="2">#{texto['rep']}</option>
+        <option value="3">#{texto['sol']}</option>
+        <option value="4">#{texto['req']}</option>
+    </select>
+
+    <!-- Message -->
+    <div class="form-group">
+        <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="3" placeholder="Mensaje"></textarea>
+    </div>
+
+
+    <button class="btn btn-info btn-block" type="submit">#{texto['send']}</button>
+
+</form>
+<!-- Default form contact -->
+        
+    </ui:define>
+</ui:composition>
